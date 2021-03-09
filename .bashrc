@@ -20,11 +20,9 @@ fi
 # export SYSTEMD_PAGER=
 
 # User specific aliases and functions
-~/bin/nagaremap
-xsetwacom set "HID 256c:006d Pad pad" button 1 key Ctrl Z
-xsetwacom set "HID 256c:006d Pad pad" button 2 key M
-alias audio-avr='pactl set-default-sink alsa_output.pci-0000_00_1f.3.iec958-stereo'
-alias audio-headset='pactl set-default-sink alsa_output.usb-FiiO_DigiHug_USB_Audio-01.iec958-stereo'
+~/.local/bin/nagaremap
+~/.local/bin/tabletremap
+~/.local/bin/audioname
 
 export VULKAN_SDK=~/bin/vulkanSdk/1.2.162.0/x86_64
 export LD_LIBRARY_PATH=$VULKAN_SDK/lib:$LD_LIBRARY_PATH
