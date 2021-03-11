@@ -20,9 +20,9 @@ fi
 # export SYSTEMD_PAGER=
 
 # User specific aliases and functions
-~/.local/bin/nagaremap
-~/.local/bin/tabletremap
-~/.local/bin/audioname
+source ~/.local/bin/nagaremap
+source ~/.local/bin/tabletremap
+source ~/.local/bin/audioname
 
 export VULKAN_SDK=~/bin/vulkanSdk/1.2.162.0/x86_64
 export LD_LIBRARY_PATH=$VULKAN_SDK/lib:$LD_LIBRARY_PATH
