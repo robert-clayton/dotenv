@@ -5,8 +5,8 @@ sudo dnf update
 # Mount other drives
 sudo mkdir /mnt/Muse 
 sudo mkdir /mnt/Ziru
-mount /dev/sda2 /mnt/Muse
-mount /dev/sdb2 /mnt/Ziru
+sudo mount /dev/sda2 /mnt/Muse
+sudo mount /dev/sdb2 /mnt/Ziru
 
 # Grab FFMPEG (Fix Firefox video stutter)
 wget https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-33.noarch.rpm
