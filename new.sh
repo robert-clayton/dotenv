@@ -3,8 +3,8 @@
 sudo dnf update
 
 # Mount other drives
-mkdir /mnt/Muse 
-mkdir /mnt/Ziru
+sudo mkdir /mnt/Muse 
+sudo mkdir /mnt/Ziru
 mount /dev/sda2 /mnt/Muse
 mount /dev/sdb2 /mnt/Ziru
 
