@@ -3,11 +3,10 @@
 ```bash
 sudo rm ~/.bashrc
 
-mkdir ~/.local/bin/
-ln -s .bashrc ~/.bashrc
-for file in bin/*; do
-    ln -s $file ~/.local/$file
-done
+mkdir ~/.local/
+rm -rf ~/.bashrc
+cp .bashrc ~/.bashrc
+cp -r bin ~/.local/bin
 
 bash
 ```
