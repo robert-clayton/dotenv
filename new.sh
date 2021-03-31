@@ -2,6 +2,12 @@
 
 sudo dnf update
 
+# Mount other drives
+mkdir /mnt/Muse 
+mkdir /mnt/Ziru
+mount /dev/sda2 /mnt/Muse
+mount /dev/sdb2 /mnt/Ziru
+
 # Grab FFMPEG (Fix Firefox video stutter)
 wget https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-33.noarch.rpm
 sudo rpm -i rpmfusion*.rpm
@@ -26,8 +32,7 @@ sudo chmod +x updown.sh
 sudo find /etc/openvpn/*.conf -type f -exec sed -i 's/update-resolv-conf/updown.sh/g' {} \;
 
 
-# Get OBS going
-sudo dnf install -y ffmpeg obs-studio
+# Get OBS virtual camera working
 git clone https://github.com/umlaeute/v4l2loopback /mnt/Ziru/Repos/v4l2loopback
 cd /mnt/Ziru/Repos/v4l2loopback
 make && sudo make install
